@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'San Francisco Text Light';
+  src: url("../fonts/SFUIText-Light.eot");
+  src: url("../fonts/SFUIText-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIText-Light.woff") format("woff"), url("../fonts/SFUIText-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Text Regular';
+  src: url("../fonts/SFUIText-Regular.eot");
+  src: url("../fonts/SFUIText-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIText-Regular.woff") format("woff"), url("../fonts/SFUIText-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.section-doctors > .wrap {
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-doctors-body {
+  display: flex;
+  flex-direction: column;
+  background-color: #323131;
+  border-radius: 10px;
+  width: 95%;
+  padding: 1%;
+}
+
+.section-doctors-body_search-block {
+  display: flex;
+  align-items: center;
+}
+
+.section-doctors-body_search-block > #select_department {
+  flex: 1 0 auto;
+  margin-right: 1%;
+}
+
+.section-doctors-body_items-block {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.section-doctors-body_items-block_item {
+  width: calc(100% * (1/4) - 10px);
+}
+
+.section-doctors-body_pages-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-doctors-body_pages-block > .link {
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  color: #fafafa;
+  width: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.section-doctors-body_pages-block > .link:hover {
+  background-color: #535252;
+  transition: 1s;
+}
+
+.section-doctors-body_pages-block > .selected_link {
+  background-color: #535252;
+}
+
+.section-doctor-info {
+  padding: 5% 0;
+}
+
+.section-doctor-info > .wrap > .body {
+  display: flex;
+  justify-content: center;
+}
+
+.section-doctor-info_block-picture {
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: center;
+}
+
+.section-doctor-info_block-picture > img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #913c3c;
+}
+
+.section-doctor-info_block-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 80%;
+  margin-left: 10%;
+  color: #fafafa;
+  background: radial-gradient(ellipse at 50%, #2e282b, transparent 70%);
+}
+
+.section-doctor-info_block-info .doctor-name {
+  color: #45dc70;
+  font-size: 30px;
+  text-shadow: -5px 5px 10px #414040;
+}
+
+.section-doctor-info_block-info .doctor-desc {
+  color: #fddcdc;
+  font-size: 20px;
+  margin: 1% 0 5% 0;
+}
+
+.section-doctor-info_block-info .doctor-indicators {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-doctor-info_block-info .doctor-indicators_text {
+  padding: 8px 0;
+  border-top: 0.5px solid gray;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-doctor-info_block-info .doctor-indicators_text .key {
+  font-weight: bold;
+  flex: 0 0 30%;
+  margin-right: 1%;
+}
+
+.section-doctor-info_block-info .doctor-indicators_text .value {
+  flex: 1 0 70%;
+}

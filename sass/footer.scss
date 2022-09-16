@@ -1,0 +1,129 @@
+@import 'fonts';
+.footer{
+    margin-top: 5%;
+    & > .wrap{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid silver;
+        padding: 3% 0;
+    }
+    &_section{
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        margin: 0 5px;
+    }
+    &_title-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: $dark_text;  
+        &_logo{
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            &:hover &-picture{
+                fill: #c6c7ca;
+                transition: 1s;
+            }
+            &:hover  &-text{
+                color: $dark_red;
+                transition: 1s;
+            }
+            &-picture{
+                width: 50px;
+                height: 50px;
+                fill: $dark_red;
+            }
+            &-text{
+                font-size: 24px;
+                color:#c6c7ca;
+                margin-left: 1%;
+            }
+        }
+        &_rights{
+            margin-top: 5%;;
+            font-size: 17px;
+            text-align: center;
+        }
+    }
+    &_information{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: $dark_text;
+        &-item{
+            display: flex;
+            &_image{
+                & > svg{
+                    fill: $lite_red-text;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+            &_title{
+               width: 90%;
+                margin-left: 5%;
+            }
+            & a{
+                color: $dark_text;
+                text-decoration: none;
+            }
+        }
+    }
+    &_social-network{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &_line{
+            position: relative;
+            display: flex;
+            align-items: center;
+            & > a{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                text-decoration: none;
+                line-height: 2em;
+                text-transform: uppercase;
+                color: $dark_text;
+                &::after{
+                    display: block;
+                    content: "";
+                    background-color: #fddcdc;
+                    height: 0.1vw;
+                    width: 0px;
+                    transition: 0.4s;
+                }
+                &:hover:after{
+                    width: 100%;
+                    transition: 0.4s;
+                }
+            }
+            &::before{
+                display: block;
+                position: absolute;
+                left: -35px;
+                content: "";
+                width: 25px;
+                height: 25px;
+                background-image: url("../image/social-network-logo.png");
+                background-size: 200px;
+                margin-right: 3%;
+            }
+            &.instagramm::before{
+                background-position: 100% 0;//instagramm
+            }
+            &.vk::before{
+                background-position: 0 0;//vk
+            }
+            &.whatsapp::before{
+                background-position: 20% 75%;//whatsapp
+            }
+            &.telegramm::before{
+                background-position: 40% 75%;//telegramm
+            }
+        }
+    }
+}

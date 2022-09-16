@@ -1,0 +1,11 @@
+.section-direction{
+    margin-bottom: 5%;
+    &_description-block{
+        width: 100%;
+        text-align: justify;
+        color: $dark_text;
+        & p{
+            margin-bottom: 27px;
+        }
+    }
+}

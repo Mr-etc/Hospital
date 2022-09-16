@@ -1,0 +1,137 @@
+@import 'fonts';
+.header{
+    display: flex;
+    height: 70px;
+    background-color: rgb(20, 20, 20);
+    justify-content: space-around;
+    &-logo{
+        height: 100%;
+        display: flex;
+        align-items: center;    
+        cursor: pointer;
+        &:hover &_picture{
+            fill: #c6c7ca;
+            transition: 1s;
+        }
+        &:hover  &_text{
+            color: $dark_red;
+            transition: 1s;
+        }
+        &_picture{
+            width: 50px;
+            height: 50px;
+            fill: $dark_red;
+        }
+        &_text{
+            font-size: 24px;
+            color:#c6c7ca;
+            margin-left: 1%;
+            text-decoration: none;
+        }
+    }
+    &-search{
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+    }
+    &-info{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex: 1;
+        color: $dark_text;
+        &_phone{
+            text-decoration: none;
+            color: $dark_text;
+            font-size: 20px;
+            border: 2px solid $dark_text;
+            padding: 2.5px 5px;
+            border-radius: 30px;
+            margin-left: 30px;
+            &:hover{
+                border: 2px solid $dark_red;
+                color: $dark_red;
+                transition: 0.5s;
+            }
+        }
+        &_worktime{
+            font-size: 12px;
+        }
+        &_username{
+            margin-left: 15px;
+        }
+    }
+}
+.Menu{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(49, 46, 46);
+    z-index: 1;
+    &_list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        &-item{
+            width: 100%;
+            text-align: center;
+        }
+        & > li{
+            display: flex;
+            height: 50px;
+            width: 20%;
+            justify-content: center;
+            position: relative;
+            flex: 1 0 auto;
+            align-items: center;
+            border-radius: 5px;
+            transition: background-color .2s;
+            & a{
+                display: block;
+                color: $lite_red-text;
+                text-decoration: none;
+                word-break:break-all;
+            }
+            &:hover{
+                background-color: rgb(70, 66, 66);
+            }
+            &:hover .Menu_list_drop-list{
+                visibility: visible;
+                opacity:1;
+                transition: .8s;
+            }
+        }
+        &_drop-list{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            top: 50px;
+            left: 0;
+            right: auto;
+            background-color: rgb(70, 66, 66);
+            border-radius: 10px;
+            min-width: 100%;
+            box-shadow: 0 12px 12px 0 rgba(0,0,0,0.20);
+            visibility: hidden;
+            opacity:0;
+            & ul{
+                margin: 10px 0 0 0;
+                padding: 10px;
+                list-style: none;
+                white-space: nowrap;
+                & li{
+                    padding: 5px;
+                    min-width: 170px;
+                    padding-right: 30px;
+                    &:hover{
+                        background-color: rgb(77, 75, 75)
+                    }
+                }
+            }
+        }
+        & li:last-child() &_drop-list{
+            right: 0;
+            left: auto;
+        }
+    }
+}

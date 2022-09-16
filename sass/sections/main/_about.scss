@@ -1,0 +1,51 @@
+.section-about{
+    display: flex;
+    min-height: 300px;
+    background-color: rgb(41, 41, 41);
+    &_block{
+        display: flex;
+        flex-direction: column;
+        color: #4974a9;
+        font-size: 22px;
+        flex: 0 0 30%; 
+        padding: 7% 0 5% 0;
+        &-header{
+            @include header_font;
+            font-size:  44px;
+            font-weight: 700;
+            text-transform: uppercase;
+            //text-shadow: -5px 5px 10px #414040;
+        }
+        &-desc{
+            font-size: 18px;
+            color: $lite_red-text;
+            flex: 1 0;
+            margin: 30px 0;
+        }
+        &-image{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        &-button{
+            padding: 2% 3%;
+            font-size: 18px;
+            text-align: center;
+            height: 50px;
+            border-radius: 25px;
+            background-color: #1965cf;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 1s;
+            &:hover{
+                background-color: #207dff;
+            }
+        }
+        &:last-child{
+            padding: 7% 5% 5% 5%;
+            flex: 1;
+        }
+    }
+}

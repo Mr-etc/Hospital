@@ -1,0 +1,57 @@
+.section-doctor-info{
+    padding: 5% 0;
+    & > .wrap > .body{
+        display: flex;
+        justify-content: center;
+    }
+    &_block-picture{
+        display: flex;
+        flex: 1 0 auto;
+        justify-content: center;
+        & > img{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid $dark_red;
+        }
+    }
+    &_block-info{
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 80%;
+        margin-left: 10%;
+        color: $dark_text;
+        background: radial-gradient( ellipse at 50%, #2e282b, transparent 70%);
+        & .doctor-name{
+            color: $green_text;
+            font-size: 30px;
+            text-shadow: -5px 5px 10px #414040;
+        }
+        & .doctor-desc{
+            color: $lite_red-text;
+            font-size: 20px;
+            margin: 1% 0 5% 0;
+        }
+        & .doctor-indicators{
+            display: flex;
+            flex-direction: column;
+            &_text{
+                padding: 8px 0;
+                border-top: 0.5px solid gray;
+                display: flex;
+                justify-content: space-between;
+                & .key{
+                    font-weight: bold;
+                    flex: 0 0 30%;
+                    margin-right: 1%;
+                }
+                & .value{
+                    flex: 1 0 70%;
+                }
+                
+            }
+            
+        }
+    }
+}

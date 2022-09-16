@@ -1,0 +1,49 @@
+.section-department-slider{
+    & .header_block{
+        justify-content: flex-start;
+        margin: 0 0 10px;
+        & h1{
+            border: none;
+        }
+    }
+    &_items{
+        & .item{
+            display: flex;
+            //margin: 10px;
+            color: $dark_text;
+            border: 1px solid silver;
+            border-radius: 10px;
+            padding: 10px;
+            user-select: none;
+            &_image-block{
+                display: flex;
+                flex: 0 0 40%;
+                &_picture{
+                    width: 80px;
+                    height: auto;
+                    margin: 0 auto;
+                }
+            }
+            &_desc-block{
+                display: flex;
+                flex-direction: column;
+                &_header{
+                    flex: 1 0 auto;
+                }
+                &_link{
+                    color: $lite_red-text;
+                    text-decoration: none;
+                    margin-top: 10px;
+                    &::after{
+                        content: ">";
+                        transition: margin .2s linear;
+                    }
+                    &:hover:after{
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+}

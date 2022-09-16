@@ -1,0 +1,40 @@
+.section-departments{
+    & > .wrap{
+        flex-direction: column;
+    }
+}
+.section-department-info{
+    & > .wrap{
+        flex-direction: column;
+    }
+    &_body{
+        display: flex;
+        width: 100%;
+        &_block{
+            &:first-child{
+                flex: 0 0 285px;
+                margin: 0;
+            }
+            flex:0 auto;
+            margin: 0 50px;
+            color: $dark_text;
+            & > *{
+                margin-bottom: 27px;
+            }
+            /*& h3{
+                font-weight: bold;
+                font-size: 24px;
+            }*/
+            & p{
+                &::first-letter{
+                    text-transform: capitalize;
+                }
+            }
+            & ul{
+                & > li::first-letter{
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}

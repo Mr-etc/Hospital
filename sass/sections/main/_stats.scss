@@ -1,0 +1,42 @@
+.section-stats{
+    background-color: #131313;
+    color: $dark_text;
+    & > .wrap{
+        flex-direction: column;
+    }
+    &_block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 50px 0 100px 0;
+        &-img{
+            max-width: 100%;
+            object-fit: cover;
+        }
+        &-items{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 -1%;
+            background-color: $block_gray;
+            & .item{
+                width: 30%;
+                justify-content: center;
+                margin: 1% 1%;
+                flex: 1 1 auto;
+                text-align: center;
+                &-header{
+                    font-size: 48px;
+                    //color: #dc4545;
+                    color: #45dc70;
+                }
+                &-desc{
+                    font-size: 18px;
+                    color: $dark_text;  
+                }
+            }
+        }
+    }
+}

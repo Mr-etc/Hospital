@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'San Francisco Text Light';
+  src: url("../fonts/SFUIText-Light.eot");
+  src: url("../fonts/SFUIText-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIText-Light.woff") format("woff"), url("../fonts/SFUIText-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Text Regular';
+  src: url("../fonts/SFUIText-Regular.eot");
+  src: url("../fonts/SFUIText-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIText-Regular.woff") format("woff"), url("../fonts/SFUIText-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.section-auth .wrap, .section-register .wrap {
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-auth_body, .section-register_body {
+  position: relative;
+  background-color: #323131;
+  border-radius: 10px;
+  width: 65%;
+  padding: 50px 0;
+}
+
+.section-auth_body > *, .section-register_body > * {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.section-auth_body .wait_wrap, .section-register_body .wait_wrap {
+  display: inline;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  border-radius: 10px;
+  border: 1px solid gray;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.section-auth_body .wait_wrap .message_box, .section-register_body .wait_wrap .message_box {
+  color: white;
+  padding: 10px;
+  background-color: #323131;
+  border-radius: 10px;
+}
+
+.section-auth_body .wait_wrap .spinner, .section-register_body .wait_wrap .spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.section-auth_body .wait_wrap.show, .section-register_body .wait_wrap.show {
+  background-color: rgba(0, 0, 0, 0.336);
+  visibility: visible;
+  opacity: 1;
+  transition: .4s;
+}
+
+.section-auth_body .input-block, .section-register_body .input-block {
+  margin-bottom: 10px;
+}
+
+.section-auth_body .input-block label, .section-register_body .input-block label {
+  cursor: pointer;
+  color: white;
+}
+
+.section-auth_body .input-block .radio label, .section-register_body .input-block .radio label {
+  display: flex;
+  width: auto;
+  color: gray;
+}
+
+.section-auth_body .input-block .radio label img, .section-register_body .input-block .radio label img {
+  width: 50px;
+  height: auto;
+}
+
+.section-auth_body .input-block .radio label span, .section-register_body .input-block .radio label span {
+  align-self: center;
+}
+
+.section-auth_body .input-block:last-child, .section-register_body .input-block:last-child {
+  margin: 0 auto;
+}
+
+.section-auth_body .Button, .section-register_body .Button {
+  display: block;
+  color: white;
+  background-color: #29643e;
+}
+
+.section-auth_body .Button:hover, .section-register_body .Button:hover {
+  border-color: #38b363;
+}
+
+.section-auth_body .desc-label, .section-register_body .desc-label {
+  display: inline-block;
+  color: white;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.section-auth_body {
+  padding-bottom: 20px;
+}

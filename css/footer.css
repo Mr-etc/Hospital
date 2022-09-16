@@ -1,0 +1,166 @@
+@font-face {
+  font-family: 'San Francisco Text Light';
+  src: url("../fonts/SFUIText-Light.eot");
+  src: url("../fonts/SFUIText-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIText-Light.woff") format("woff"), url("../fonts/SFUIText-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Text Regular';
+  src: url("../fonts/SFUIText-Regular.eot");
+  src: url("../fonts/SFUIText-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIText-Regular.woff") format("woff"), url("../fonts/SFUIText-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.footer {
+  margin-top: 5%;
+}
+
+.footer > .wrap {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid silver;
+  padding: 3% 0;
+}
+
+.footer_section {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  margin: 0 5px;
+}
+
+.footer_title-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fafafa;
+}
+
+.footer_title-block_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.footer_title-block_logo:hover .footer_title-block_logo-picture {
+  fill: #c6c7ca;
+  transition: 1s;
+}
+
+.footer_title-block_logo:hover .footer_title-block_logo-text {
+  color: #913c3c;
+  transition: 1s;
+}
+
+.footer_title-block_logo-picture {
+  width: 50px;
+  height: 50px;
+  fill: #913c3c;
+}
+
+.footer_title-block_logo-text {
+  font-size: 24px;
+  color: #c6c7ca;
+  margin-left: 1%;
+}
+
+.footer_title-block_rights {
+  margin-top: 5%;
+  font-size: 17px;
+  text-align: center;
+}
+
+.footer_information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fafafa;
+}
+
+.footer_information-item {
+  display: flex;
+}
+
+.footer_information-item_image > svg {
+  fill: #fddcdc;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.footer_information-item_title {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.footer_information-item a {
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.footer_social-network {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer_social-network_line {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.footer_social-network_line > a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  line-height: 2em;
+  text-transform: uppercase;
+  color: #fafafa;
+}
+
+.footer_social-network_line > a::after {
+  display: block;
+  content: "";
+  background-color: #fddcdc;
+  height: 0.1vw;
+  width: 0px;
+  transition: 0.4s;
+}
+
+.footer_social-network_line > a:hover:after {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.footer_social-network_line::before {
+  display: block;
+  position: absolute;
+  left: -35px;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-image: url("../image/social-network-logo.png");
+  background-size: 200px;
+  margin-right: 3%;
+}
+
+.footer_social-network_line.instagramm::before {
+  background-position: 100% 0;
+}
+
+.footer_social-network_line.vk::before {
+  background-position: 0 0;
+}
+
+.footer_social-network_line.whatsapp::before {
+  background-position: 20% 75%;
+}
+
+.footer_social-network_line.telegramm::before {
+  background-position: 40% 75%;
+}

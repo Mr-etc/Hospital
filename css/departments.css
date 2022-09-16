@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'San Francisco Text Light';
+  src: url("../fonts/SFUIText-Light.eot");
+  src: url("../fonts/SFUIText-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIText-Light.woff") format("woff"), url("../fonts/SFUIText-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Text Regular';
+  src: url("../fonts/SFUIText-Regular.eot");
+  src: url("../fonts/SFUIText-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIText-Regular.woff") format("woff"), url("../fonts/SFUIText-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.section-departments > .wrap {
+  flex-direction: column;
+}
+
+.section-department-info > .wrap {
+  flex-direction: column;
+}
+
+.section-department-info_body {
+  display: flex;
+  width: 100%;
+}
+
+.section-department-info_body_block {
+  flex: 0 auto;
+  margin: 0 50px;
+  color: #fafafa;
+  /*& h3{
+                font-weight: bold;
+                font-size: 24px;
+            }*/
+}
+
+.section-department-info_body_block:first-child {
+  flex: 0 0 285px;
+  margin: 0;
+}
+
+.section-department-info_body_block > * {
+  margin-bottom: 27px;
+}
+
+.section-department-info_body_block p::first-letter {
+  text-transform: capitalize;
+}
+
+.section-department-info_body_block ul > li::first-letter {
+  text-transform: capitalize;
+}

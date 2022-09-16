@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'San Francisco Text Light';
+  src: url("../fonts/SFUIText-Light.eot");
+  src: url("../fonts/SFUIText-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIText-Light.woff") format("woff"), url("../fonts/SFUIText-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Text Regular';
+  src: url("../fonts/SFUIText-Regular.eot");
+  src: url("../fonts/SFUIText-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIText-Regular.woff") format("woff"), url("../fonts/SFUIText-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.section-department-slider .header_block {
+  justify-content: flex-start;
+  margin: 0 0 10px;
+}
+
+.section-department-slider .header_block h1 {
+  border: none;
+}
+
+.section-department-slider_items .item {
+  display: flex;
+  color: #fafafa;
+  border: 1px solid silver;
+  border-radius: 10px;
+  padding: 10px;
+  user-select: none;
+}
+
+.section-department-slider_items .item_image-block {
+  display: flex;
+  flex: 0 0 40%;
+}
+
+.section-department-slider_items .item_image-block_picture {
+  width: 80px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.section-department-slider_items .item_desc-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-department-slider_items .item_desc-block_header {
+  flex: 1 0 auto;
+}
+
+.section-department-slider_items .item_desc-block_link {
+  color: #fddcdc;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.section-department-slider_items .item_desc-block_link::after {
+  content: ">";
+  transition: margin .2s linear;
+}
+
+.section-department-slider_items .item_desc-block_link:hover:after {
+  margin-left: 5px;
+}
+
+.section-direction {
+  margin-bottom: 5%;
+}
+
+.section-direction_description-block {
+  width: 100%;
+  text-align: justify;
+  color: #fafafa;
+}
+
+.section-direction_description-block p {
+  margin-bottom: 27px;
+}

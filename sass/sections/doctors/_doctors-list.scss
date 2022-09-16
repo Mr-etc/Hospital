@@ -1,0 +1,53 @@
+.section-doctors{
+    & > .wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+    &-body{
+        display: flex;
+        flex-direction: column;
+        background-color: #323131;
+        border-radius: 10px;
+        width: 95%;
+        padding: 1%;
+        &_search-block{
+            display: flex;
+            align-items: center;
+            & > #select_department{
+                flex: 1 0 auto;
+                margin-right: 1%;
+            }
+        }
+        &_items-block{
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            text-align: center;
+            margin-top: 2%;
+            &_item{
+                width: calc(100% * (1/4) - 10px);
+            }
+        }
+        &_pages-block{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & > .link{
+                font-size: 20px;
+                text-decoration: none;
+                text-align: center;
+                color: $dark_text;
+                width: 20px;
+                cursor: pointer;
+                border-radius: 5px;
+                &:hover{
+                    background-color: #535252;
+                    transition: 1s;
+                }
+            }
+            & > .selected_link{
+                background-color: #535252;
+            }
+        }
+    }
+}

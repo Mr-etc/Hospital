@@ -1,0 +1,83 @@
+.slick-slider{
+    position: relative;
+    & .slick-arrow{
+        position: absolute;
+        top:50%;
+        padding: 0;
+        transform: translateY(-50%);
+        z-index: 1;
+        width: 50px;
+        height: 50px;
+        background-color: gray;
+        border: none;
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+        font-size: 0;
+        opacity: 0.5;
+        transition: opacity .2s;
+        &::before{
+            content: "";
+            display: block;
+            background: url("../image/slider/arrow.svg") 0 0 / 100% no-repeat;
+            width: 100%;
+            height: 100%;
+        }
+        &:hover{
+            opacity: 1;
+        }
+    }//base-arrows
+    & .slick-prev{
+        left: -50px;
+    }//left-arrows
+    & .slick-next{
+        right: -50px;
+        &::before{
+            transform: rotate(180deg);
+        }
+    }//right-arrows
+    & .slick-list{
+        display: flex;
+        //justify-content: center;
+        overflow: hidden;
+        & .slick-track{
+            display: flex;
+            & .slick-slide{
+                display: flex;
+                justify-content: center;
+                outline: none;
+                & .item{
+                    cursor: default;
+                    transition: .5s;
+                    width: 90%;
+                    margin: 10px 0;
+                    &:hover{
+                        transform: scale(1.04);
+                        background-color: #363636;
+                        color:  white;
+                    }
+                }
+            }
+        }
+    }//slides
+    & .slick-dots{
+        display: flex;
+        justify-content: center;
+        margin: 0 -2px;
+        & button{
+            padding: 0;
+            margin: 0;
+            width: 15px;
+            height: 15px;
+            margin: 0 2px;
+            font-size: 0; 
+            background: none;
+            border: 1px solid gray;
+            border-radius: 50%;
+            outline: none;
+        }
+        & .slick-active button{
+            background-color: #fff;
+        }        
+    }
+}

@@ -1,0 +1,31 @@
+$dark_text: #fafafa;
+$green_text: #45dc70;
+$dark_red: #913c3c;
+$lite_red-text: rgb(253, 220, 220);
+$block_gray: #3c3b41;
+
+@font-face {
+    font-family: 'San Francisco Text Light';
+    src: url('../fonts/SFUIText-Light.eot');
+    src: url('../fonts/SFUIText-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SFUIText-Light.woff') format('woff'),
+    url('../fonts/SFUIText-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'San Francisco Text Regular';
+    src: url('../fonts/SFUIText-Regular.eot');
+    src: url('../fonts/SFUIText-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SFUIText-Regular.woff') format('woff'),
+    url('../fonts/SFUIText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@mixin header_font{
+    font-family: 'San Francisco Text Regular';
+    text-shadow: -5px 5px 10px #414040;
+}
+@mixin base_font{
+    font-family: 'San Francisco Text Light';
+}

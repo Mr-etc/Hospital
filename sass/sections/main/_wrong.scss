@@ -1,0 +1,25 @@
+.section-wrong{
+    background-color: rgb(20, 20, 20);
+    & > .wrap{
+        display: flex;
+        justify-content: center;
+    }
+    &_banner{
+        position: relative;
+        top: 25px;
+        background-color: #af3535;
+        width: 80%;
+        padding: 2% 5%;
+        border-radius: 10px;
+        box-shadow: 0 12px 12px 0 rgba(0,0,0,0.20);
+        text-align: justify;
+        color: white;
+        & > .title{
+            font-size: 1.7em;
+            margin-bottom: 4%;
+        }
+        & > .text{
+            margin-bottom: 1%;
+        }
+    }
+}

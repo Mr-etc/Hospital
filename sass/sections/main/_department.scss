@@ -1,0 +1,49 @@
+.section-department{
+    & > .wrap{
+        flex-direction: column;
+    }
+    &_block{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 5% auto;
+        &-item{
+            display: flex;
+            flex-direction: column;
+            margin: 0 5px;
+            width: 32%;
+            background-color: $block_gray;
+            padding: 1em;
+            border-radius: 5px;
+            color: $dark_text;
+            margin-bottom: 10px;
+            flex-grow: 1;
+            &_header{
+                color: white;
+                font-size: 20px;
+            }
+            &_content{
+                flex: 1 0 auto;
+                font-size: 16px;
+                margin: 4% 0 7% 0;
+            }
+            &_button{
+                background-color: #2D3663;
+                text-decoration: none;
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+                font-size: 12px;
+                border-radius: 3px;
+                &:hover{
+                    background-color: #374177;
+                    transition: 0.4s;
+                }
+            }
+            &:hover{
+                transform: scale(1.03);
+                transition: 0.4s ease;
+            }
+        }
+    }
+}

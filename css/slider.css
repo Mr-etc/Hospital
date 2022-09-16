@@ -1,0 +1,96 @@
+.slick-slider {
+  position: relative;
+}
+
+.slick-slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  padding: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  font-size: 0;
+  opacity: 0.5;
+  transition: opacity .2s;
+}
+
+.slick-slider .slick-arrow::before {
+  content: "";
+  display: block;
+  background: url("../image/slider/arrow.svg") 0 0/100% no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.slick-slider .slick-arrow:hover {
+  opacity: 1;
+}
+
+.slick-slider .slick-prev {
+  left: -50px;
+}
+
+.slick-slider .slick-next {
+  right: -50px;
+}
+
+.slick-slider .slick-next::before {
+  transform: rotate(180deg);
+}
+
+.slick-slider .slick-list {
+  display: flex;
+  overflow: hidden;
+}
+
+.slick-slider .slick-list .slick-track {
+  display: flex;
+}
+
+.slick-slider .slick-list .slick-track .slick-slide {
+  display: flex;
+  justify-content: center;
+  outline: none;
+}
+
+.slick-slider .slick-list .slick-track .slick-slide .item {
+  cursor: default;
+  transition: .5s;
+  width: 90%;
+  margin: 10px 0;
+}
+
+.slick-slider .slick-list .slick-track .slick-slide .item:hover {
+  transform: scale(1.04);
+  background-color: #363636;
+  color: white;
+}
+
+.slick-slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0 -2px;
+}
+
+.slick-slider .slick-dots button {
+  padding: 0;
+  margin: 0;
+  width: 15px;
+  height: 15px;
+  margin: 0 2px;
+  font-size: 0;
+  background: none;
+  border: 1px solid gray;
+  border-radius: 50%;
+  outline: none;
+}
+
+.slick-slider .slick-dots .slick-active button {
+  background-color: #fff;
+}
